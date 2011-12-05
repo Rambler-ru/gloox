@@ -286,6 +286,7 @@ namespace gloox
        * Initiates non-SASL login.
        */
       void nonSaslLogin();
+      virtual bool handleNormalNode( Tag* tag );
 
     private:
       /**
@@ -397,7 +398,6 @@ namespace gloox
       };
 
       virtual void handleStartNode() {}
-      virtual bool handleNormalNode( Tag* tag );
       virtual void disconnect( ConnectionError reason );
       virtual void handleIqIDForward( const IQ& iq, int context );
 
