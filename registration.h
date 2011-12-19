@@ -217,7 +217,7 @@ namespace gloox
             q->m_fields = m_fields;
             q->m_values = m_values;
             q->m_instructions = m_instructions;
-            q->m_oob = new OOB( *m_oob );
+            q->m_oob = m_oob ? new OOB( *m_oob ) : 0;
             q->m_del = m_del;
             q->m_reg = m_reg;
             return q;
