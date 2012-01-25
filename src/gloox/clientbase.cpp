@@ -161,6 +161,8 @@ namespace gloox
 
   bool ClientBase::connect( bool block )
   {
+    m_parser.cleanup(); // essential fix from r3913 
+
     if( m_server.empty() )
       return false;
 
