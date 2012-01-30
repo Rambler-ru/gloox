@@ -17,7 +17,7 @@
 /* #undef HAVE_GETADDRINFO */
 
 /* Define to 1 if you want TLS support (GnuTLS). Undefine HAVE_OPENSSL. */
-/* #undef HAVE_GNUTLS */
+#undef HAVE_GNUTLS
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -38,8 +38,8 @@
 #define HAVE_MEMORY_H 1
 
 /* Define to 1 if you want TLS support (OpenSSL). Undefine HAVE_GNUTLS. */
-#define HAVE_OPENSSL
-//#undef HAVE_OPENSSL
+//#define HAVE_OPENSSL
+#undef HAVE_OPENSSL
 
 /* Define if you have POSIX threads libraries and header files. */
 #define HAVE_PTHREAD 1
