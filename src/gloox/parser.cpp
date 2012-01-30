@@ -762,6 +762,7 @@ namespace gloox
   {
     if( deleteRoot )
       delete m_root;
+    m_quote = false;
     m_root = 0;
     m_current = 0;
     delete m_xmlnss;
