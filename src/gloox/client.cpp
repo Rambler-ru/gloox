@@ -295,6 +295,11 @@ namespace gloox
         setAuthed( true );
         header();
       }
+      else if( m_sasl & !m_authed )
+      {
+        logInstance().err( LogAreaClassClient, "SASL sequence error!" );
+        disconnect( ConnAuthenticationError );
+      }
       else
         return false;
     }

@@ -669,6 +669,7 @@ namespace gloox
                                      * @since 0.9 */
     ConnAuthenticationFailed,       /**< Authentication failed. Username/password wrong or account does
                                      * not exist. Use ClientBase::authError() to find the reason. */
+    ConnAuthenticationError,        /**< An error ocurred during authentication procedure. */
     ConnUserDisconnected,           /**< The user (or higher-level protocol) requested a disconnect. */
     ConnNotConnected                /**< There is no active connection. */
   };
