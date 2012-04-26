@@ -588,12 +588,14 @@ namespace gloox
       // reimplemented from IqHandler.
       virtual void handleIqID( const IQ& iq, int context );
 
+      virtual ~Disco();
+      Disco( ClientBase* parent );
+    protected:
+      ClientBase* m_parent;
     private:
 #ifdef DISCO_TEST
     public:
 #endif
-      Disco( ClientBase* parent );
-      virtual ~Disco();
 
       enum IdType
       {
@@ -610,7 +612,6 @@ namespace gloox
         int context;
       };
 
-      ClientBase* m_parent;
 
       typedef std::list<DiscoHandler*> DiscoHandlerList;
       typedef std::list<DiscoNodeHandler*> DiscoNodeHandlerList;
