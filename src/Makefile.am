@@ -48,6 +48,7 @@ libglooxinclude_HEADERS = adhoccommandprovider.h      privacymanager.h        ta
                             annotationshandler.h      component.h             registration.h \
                             bookmarkhandler.h         registrationhandler.h   jid.h \
                             bookmarkstorage.h         messagehandler.h        rosteritem.h \
+                            rosteritemdata.h\
                             clientbase.h              rosterlistener.h        taghandler.h \
                             connectionlistener.h      rostermanager.h         gloox.h \
                             glooxversion.h \
@@ -95,7 +96,7 @@ libglooxinclude_HEADERS = adhoccommandprovider.h      privacymanager.h        ta
 noinst_HEADERS = config.h prep.h dns.h nonsaslauth.h mucmessagesession.h stanzaextensionfactory.h \
                    tlsgnutlsclient.h \
                    tlsgnutlsbase.h tlsgnutlsclientanon.h tlsgnutlsserveranon.h tlsopensslbase.h tlsschannel.h \
-                   compressionzlib.h rosteritemdata.h tlsopensslclient.h \
+                   compressionzlib.h tlsopensslclient.h \
                    tlsopensslserver.h
 
 EXTRA_DIST = version.rc
