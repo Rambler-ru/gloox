@@ -1,0 +1,24 @@
+2012-06-08
+----------
+* Original directory structure and native make system restored from source archive
+  (http://www.camaya.net/download/gloox-0.9.9.12.tar.bz2) and merged with local changes
+
+* Subversion repository (svn://svn.camaya.net/gloox/branches/1.0) analysis reveated that originally distributed
+  source archive (http://www.camaya.net/download/gloox-0.9.9.12.tar.bz2) almost identical to revision 4307 (2009-10-31).
+  They differs in some intermediate or auxiliary build files and repository have files:
+
+    src/tlsgnutlsserver.cpp
+    src/tlsgnutlsserver.h
+
+  This is strangely. At the moment of first branching (2011-11-18) current stable revision was 4381 (2010-12-09)
+
+
+2012-06-07
+----------
+* Carved out into separate repository (https://github.com/Rambler-ru/gloox) with all revisions history
+
+
+2011-11-18
+----------
+* Branched from http://www.camaya.net/download/gloox-0.9.9.12.tar.bz2 (MD5 f8eacf1c6476e0a309b453fd04f90e31)
+  into internal repository
