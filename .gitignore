@@ -1,6 +1,4 @@
 # Backup files from kate text editor
 *~
-Makefile.in
 aclocal.m4
 autom4te.cache/
-configure
